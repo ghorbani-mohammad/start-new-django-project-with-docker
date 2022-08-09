@@ -1,0 +1,8 @@
+services:
+  prepare_5_django:
+    container_name: prepare_5_django
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8000:80
