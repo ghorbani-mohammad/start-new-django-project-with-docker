@@ -5,4 +5,4 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-CMD ["sh", "-c", "cd /app/project/ && python manage.py runserver 0:80"]
+CMD ["python", "/app/project/manage.py", "runserver", "0:80"]
